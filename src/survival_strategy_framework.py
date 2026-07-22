@@ -1,4 +1,4 @@
-""" 
+"""
 ====================================================================================================
 TITLE:              SURVIVAL STRATEGY FRAMEWORK
 SUBTITLE:           From Time-to-Event Data to Governed Intervention Evidence
