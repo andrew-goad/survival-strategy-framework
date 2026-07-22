@@ -1,0 +1,19 @@
+Check,Status,Evidence
+Unique governed IDs,PASS,"7,500 unique IDs across 7,500 rows."
+Target cohort is non-empty,PASS,"1,875 records selected at quantile 0.75."
+Same target cohort across scenarios,PASS,Every scenario score table was compared with the identical baseline target IDs.
+Engineered dependencies synchronized,PASS,All interaction and squared-term post-rebuild checks were reviewed.
+Scenario change audit completed,PASS,"Configured changes, realized movement, and bound-hit rates were archived."
+Scenario metrics are calculated and finite,PASS,"No hard-coded uncertainty, ROI, revenue, or defended-value metric is used."
+"Predicted survival remains within [0, 1]",PASS,All baseline and scenario survival probabilities satisfy probability bounds.
+Predicted survival begins at S(0)=1,PASS,The first baseline and scenario survival values were tested at time zero.
+Scenario direction matches configured expectation,PASS,"Control, favorable, stress, and technical scenarios were compared with expected direction."
+No-change control scenario,PASS,Expected zero modeled movement within numerical tolerance.
+Adverse stress scenario,PASS,Expected negative hazard-reduction and survival-uplift evidence.
+Cross-validation completed,PASS,5 stratified folds were required.
+Out-of-fold calibration evidence,PASS,Maximum group absolute calibration error: 7.08%.
+Persona quality evidence,PASS,Silhouette=0.161; mean stability ARI=0.992.
+Proportional-hazards diagnostics,REVIEW,Global documented PH status: PASS_WITH_REVIEW.
+PH sensitivity review,PASS,Low-cardinality raw PH review features were stratified where technically appropriate; target-cohort overlap and favorable-scenario ranking were compared.
+Substantive reproducibility,PASS,"Persona, model, validation, target-cohort, scenario, and curve outputs were repeated."
+Executive and technical reports created,PASS,Survival_Strategy_Deck.pptx | Technical_Model_Evidence.pdf
